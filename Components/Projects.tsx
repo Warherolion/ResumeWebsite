@@ -15,29 +15,30 @@ const PROJECTS: Project[] = [
     slug: "metrocketry-active-control",
     title: "MetRocketry — Active Control Rocket",
     subtitle:
-      "Canard-based stabilization with STM32 flight computer, IMU/GPS, and gain-scheduled control.",
-    tags: ["Controls", "Embedded", "STM32", "Simulink"],
+      "Canard-based stabilization for high preformance rocket",
+    tags: ["Control Systems", "Solidworks", "Ansys", "Matlab", "Simulink"],
     year: "2025–2026",
     image: "/projects/metrocket.jpg",
-  },
-  {
-    slug: "cerberus-constellation",
-    title: "CERBERUS — Solar Monitoring Constellation",
-    subtitle:
-      "Concept mission design and subsystem trades for multi-point solar event monitoring + comms.",
-    tags: ["Space Systems", "Trades", "STK", "Mission Design"],
-    year: "2025–2026",
-    image: "/projects/cerberus.jpg",
   },
   {
     slug: "flight-computer-pcb",
     title: "Flight Computer PCB",
     subtitle:
       "4-layer mixed-signal PCB design: power, sensors, connectors, ESD/TVS protection, and routing constraints.",
-    tags: ["PCB", "KiCad", "Power", "Sensors"],
+    tags: ["PCB Design", "KiCad", "STM32", "I2C", "SPI"],
     year: "2025",
     image: "/projects/pcb.jpg",
   },
+  {
+    slug: "cerberus-constellation",
+    title: "AIAA Design Competition — Solar Monitoring Spacecraft",
+    subtitle:
+      "Concept mission design and subsystem trades for multi-point solar event monitoring + comms.",
+    tags: ["Space Systems Design", "STK", "Matlab"],
+    year: "2025–2026",
+    image: "/projects/cerberus.jpg",
+  },
+
 ];
 
 export default function ProjectsSection() {
@@ -49,8 +50,7 @@ export default function ProjectsSection() {
             Projects
           </h2>
           <p className="mt-3 text-black/70">
-            A few highlights. Each write-up includes goals, design decisions,
-            results, and what I’d improve next.
+            A few of the project I have worked recently.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export default function ProjectsSection() {
 
               <div className="mt-6 text-sm font-medium text-black/80">
                 <span className="inline-block transition group-hover:translate-x-0.5">
-                  Read case study →
+                  Read more
                 </span>
               </div>
             </div>

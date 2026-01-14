@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 function clamp(v: number, min: number, max: number) {
   return Math.min(max, Math.max(min, v));
@@ -79,14 +80,8 @@ export default function IntroSection() {
 
             <div className="mt-6 flex flex-wrap gap-3">
             <a
-                href="/projects"
-                className="rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80"
-            >
-                View Projects
-            </a>
-            <a
                 href="/resume"
-                className="rounded-lg bg-white/70 px-5 py-2 transition hover:bg-white"
+                className="rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80"
             >
                 View Resume
             </a>
