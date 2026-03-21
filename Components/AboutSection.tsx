@@ -8,17 +8,20 @@ export default function AboutSection() {
             About
           </h2>
           <p className="mt-4 text-lg text-black/70">
-            I’m Ranvir, an Aerospace Engineering student focused on control
-            systems, embedded electronics, and flight software. I like building
-            end-to-end systems—simulation → hardware → testing → iteration.
+              My passion for space and spacecraft began in childhood, sparked by a fascination with rockets, satellites, 
+              and the idea of humanity exploring beyond Earth, and it has steadily grown into a lifelong pursuit. Over the years, 
+              that curiosity evolved into a commitment to engineering, where I have developed a hands-on, detail-oriented 
+              approach to solving complex technical problems. I enjoy tackling challenges that require both creativity with analytical 
+              thinking, and I am particularly motivated by projects that bring together mechanical design, controls, and embedded 
+              systems into a single working solution.
+              <br></br>
+              My core experience is working as the Control Systems Lead for MetRocketry which has been a defining experience 
+              in my development, allowing me to work closely with multidisciplinary teams while contributing to the design and implementation of real flight hardware. 
+              The role has strengthened my technical abilities while also teaching me leadership, collaboration, and the importance 
+              of clear communication and system-level thinking under real project constraints. Through these experiences, I continue 
+              to grow as an engineer who is driven, adaptable, and passionate about contributing to the future of aerospace and space technology.
           </p>
 
-          <p className="mt-4 text-black/70">
-            Recently I’ve been working on actively controlled model rocketry,
-            sensor fusion, and system-level design for space missions. This site
-            is where I document projects, write technical notes, and share what
-            I learn.
-          </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
             <a
@@ -44,24 +47,26 @@ export default function AboutSection() {
             </h3>
             <ul className="mt-4 space-y-2 text-black/80">
               <li>• Control systems (PID/LQR, gain scheduling, stability)</li>
-              <li>• Embedded systems (STM32, sensors, comms, power)</li>
+              <li>• Embedded systems (STM32, Circut design, Programming)</li>
               <li>• Simulation & analysis (MATLAB/Simulink, basic CFD/FEA)</li>
-              <li>• Space systems thinking (budgets, trades, verification)</li>
+              <li>• Mechanical Design (DFM/DFA, GD&T, CAD)</li>
             </ul>
           </div>
 
           <div className="rounded-3xl bg-white/90 p-6 shadow-sm backdrop-blur">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-black/60">
-              Tooling
+              Software skills
             </h3>
             <div className="mt-4 flex flex-wrap gap-2">
               {[
                 "MATLAB/Simulink",
                 "C/C++",
-                "STM32",
+                "Solidworks",
                 "KiCad",
-                "ANSYS",
-                "SolidWorks",
+                "ANSYS Fluent",
+                "Ansys Mechanical",
+                "Ansys LSDYNA",
+                "Altium",
                 "Git/GitHub",
               ].map((t) => (
                 <span
@@ -79,9 +84,7 @@ export default function AboutSection() {
               Currently
             </h3>
             <p className="mt-4 text-black/70">
-              Building a portfolio of flight hardware + controls work and writing
-              clear project breakdowns (goals, design decisions, results, and
-              what I’d improve).
+              Developing the flight computer for the canard control bay for MetRocketry
             </p>
           </div>
         </div>

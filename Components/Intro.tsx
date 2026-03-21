@@ -65,12 +65,12 @@ export default function IntroSection() {
             className="md:col-start-2 md:row-start-5 md:row-span-8 h-full rounded-3xl bg-white/90 p-10 shadow-xl backdrop-blur will-change-transform flex flex-col justify-center"
         >
             <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
-            Hi, I’m Ranvir 👋
+            Hi, I’m Ranvir
             </h1>
 
             <p className="mt-4 text-lg text-black/70">
-            I’m an Aerospace Engineering student at TMU working on control systems,
-            embedded electronics, and space systems design.
+            I am a fourth-year Aerospace Engineering student at Toronto Metropolitan University with a strong interest in 
+            mechanical design and analysis, as well as embedded and control systems development.
             </p>
 
             <p className="mt-4 text-black/70">

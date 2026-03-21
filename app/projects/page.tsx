@@ -2,36 +2,30 @@ import Link from "next/link";
 import Image from "next/image";
 import { PROJECTS } from "@/lib/projects";
 
-export default function ProjectsSection() {
+export default function ProjectsPage() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-20">
-      <div className="flex items-end justify-between gap-6">
+    <main className="mx-auto max-w-6xl px-4 py-16">
+      <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
             Projects
-          </h2>
-          <p className="mt-3 text-black/70">
-            A few of the projects I have worked on recently.
+          </h1>
+          <p className="mt-2 text-black/70">
+            All projects and case studies. Click a card to read more.
           </p>
         </div>
 
-        <Link
-          href="/projects"
-          className="hidden rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80 md:inline-block"
-        >
-          View all
-        </Link>
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {PROJECTS.slice(0, 3).map((p) => (
+        {PROJECTS.map((p) => (
           <Link
             key={p.slug}
             href={`/projects/${p.slug}`}
             className="group overflow-hidden rounded-3xl bg-white/90 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:shadow-md"
           >
-            {/* Image area */}
-            <div className="relative h-48 w-full overflow-hidden">
+            {/* Thumbnail */}
+            <div className="relative h-52 w-full overflow-hidden">
               <Image
                 src={p.image}
                 alt={p.title}
@@ -43,7 +37,7 @@ export default function ProjectsSection() {
             {/* Content */}
             <div className="p-6">
               <div className="flex items-start justify-between gap-4">
-                <h3 className="text-lg font-semibold leading-snug">{p.title}</h3>
+                <h2 className="text-lg font-semibold leading-snug">{p.title}</h2>
                 {p.year && (
                   <span className="shrink-0 rounded-full bg-black/5 px-3 py-1 text-xs text-black/70">
                     {p.year}
@@ -66,22 +60,13 @@ export default function ProjectsSection() {
 
               <div className="mt-6 text-sm font-medium text-black/80">
                 <span className="inline-block transition group-hover:translate-x-0.5">
-                  Read more →
+                  Read case study →
                 </span>
               </div>
             </div>
           </Link>
         ))}
       </div>
-
-      <div className="mt-10 md:hidden">
-        <Link
-          href="/projects"
-          className="inline-block rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80"
-        >
-          View all projects
-        </Link>
-      </div>
-    </section>
+    </main>
   );
 }

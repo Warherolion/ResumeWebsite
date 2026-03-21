@@ -39,7 +39,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="mt-24 bg-white/80 backdrop-blur">
+    <footer id="contact" className="scroll-mt-28 mt-24 bg-white/80 backdrop-blur">
       <div className="mx-auto max-w-6xl px-4 py-14">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Left */}
