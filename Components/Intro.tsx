@@ -44,14 +44,14 @@ export default function IntroSection() {
   return (
     <section ref={sectionRef} className="mx-auto max-w-6xl px-4 py-24">
       {/* 12-row grid so we can offset vertically */}
-     <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-12 gap-8">
-    {/* IMAGE — LEFT COLUMN */}
+     <div className="flex flex-col md:flex-row gap-8 items-center">
+    {/* IMAGE — LEFT */}
         <div
             ref={imgRef}
-            className="relative md:col-start-1 md:row-span-12 h-[70vh] min-h-[520px] overflow-hidden rounded-3xl will-change-transform"
+            className="relative w-full md:w-1/2 shrink-0 h-[70vh] min-h-[520px] overflow-hidden rounded-3xl will-change-transform"
         >
             <Image
-            src="/profile.jpg"
+            src="/Rnvir 1.jpg"
             alt="Profile picture"
             fill
             className="object-cover"
@@ -59,10 +59,10 @@ export default function IntroSection() {
             />
         </div>
 
-        {/* TEXT — RIGHT COLUMN, DROPPED DOWN */}
+        {/* TEXT — RIGHT */}
         <div
             ref={textRef}
-            className="md:col-start-2 md:row-start-5 md:row-span-8 h-full rounded-3xl bg-white/90 p-10 shadow-xl backdrop-blur will-change-transform flex flex-col justify-center"
+            className="w-full md:w-1/2 rounded-3xl bg-white/90 p-10 shadow-xl backdrop-blur will-change-transform flex flex-col justify-center"
         >
             <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
             Hi, I’m Ranvir
@@ -74,8 +74,7 @@ export default function IntroSection() {
             </p>
 
             <p className="mt-4 text-black/70">
-            This site is where I document my projects, write technical deep-dives,
-            and showcase my engineering work.
+            This site documents my most notable projects and my expansive skill set.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">

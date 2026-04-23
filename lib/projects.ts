@@ -15,13 +15,13 @@ export const PROJECTS: Project[] = [
       "Canard-based stabilization with STM32 flight computer, IMU/GPS, and gain-scheduled control.",
     tags: ["Controls", "Embedded", "STM32", "Simulink"],
     year: "2025–2026",
-    image: "/projects/metrocket.jpg",
+    image: "/CadModel.png",
   },
   {
     slug: "SpaceSystemsDesign",
-    title: "Spacecraft Mission Design project: Solar Monitoring Constellation",
+    title: "Capstone: On Orbit Spacecraft Servicer",
     subtitle:
-      "Concept mission design and subsystem trades for multi-point solar monitoring and comms.",
+      "Capstone design of an autonomous on-orbit servicing vehicle, covering rendezvous and proximity operations, GNC architecture, and subsystem trades for propulsion and robotic docking.",
     tags: ["Space Systems", "Trades", "Mission Design"],
     year: "2025",
     image: "/projects/cerberus.jpg",
@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
       "4-layer mixed-signal PCB: power distribution, sensors, connectors, ESD/TVS protection, routing constraints.",
     tags: ["PCB", "KiCad", "Power", "Sensors"],
     year: "2025-2026",
-    image: "/projects/pcb.jpg",
+    image: "/pcb.png",
   },
   // Add more projects here...
 ];

@@ -1,9 +1,12 @@
 import type { NextConfig } from "next";
+import path from "path";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   images: {
-    domains: ["cdn.pixabay.com"],
+    remotePatterns: [{ hostname: "cdn.pixabay.com" }],
+  },
+  turbopack: {
+    root: path.resolve(__dirname),
   },
 };
 

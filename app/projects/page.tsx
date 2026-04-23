@@ -30,7 +30,7 @@ export default function ProjectsPage() {
                 src={p.image}
                 alt={p.title}
                 fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                className="object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </div>
 
