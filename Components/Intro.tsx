@@ -78,12 +78,12 @@ export default function IntroSection() {
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
-            <a
+            <Link
                 href="/resume"
                 className="rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80"
             >
                 View Resume
-            </a>
+            </Link>
             </div>
         </div>
         </div>
