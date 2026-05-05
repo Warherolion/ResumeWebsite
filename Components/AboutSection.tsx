@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AboutSection() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-20">
@@ -24,18 +26,18 @@ export default function AboutSection() {
 
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
+            <Link
               href="/projects"
               className="rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80"
             >
               See Projects
-            </a>
-            <a
+            </Link>
+            <Link
               href="/blog"
               className="rounded-lg bg-white/70 px-5 py-2 transition hover:bg-white"
             >
               Read Blog
-            </a>
+            </Link>
           </div>
         </div>
 
