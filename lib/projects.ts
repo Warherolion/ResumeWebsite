@@ -15,7 +15,7 @@ export const PROJECTS: Project[] = [
       "Canard-based stabilization with STM32 flight computer, IMU/GPS, and gain-scheduled control.",
     tags: ["Controls", "Embedded", "STM32", "Simulink"],
     year: "2025–2026",
-    image: "/CadModel.png",
+    image: "/CadModel2.png",
   },
   {
     slug: "SpaceSystemsDesign",
@@ -34,6 +34,15 @@ export const PROJECTS: Project[] = [
     tags: ["PCB", "KiCad", "Power", "Sensors"],
     year: "2025-2026",
     image: "/pcb.png",
+  },
+  {
+    slug: "Solar-Relay",
+    title: "Solar Monitoring Relay Network",
+    subtitle:
+      "Space systems design of a small-satellite relay constellation for continuous solar weather monitoring, covering orbit design, link budget, power subsystem, and mission architecture.",
+    tags: ["Space Systems", "Mission Design", "Orbital Mechanics", "Communications"],
+    year: "2025",
+    image: "/projects/solar-relay-hero.png",
   },
   // Add more projects here...
 ];
