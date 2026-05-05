@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
 import path from "path";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
   output: "export",
-  // Remove basePath if you set up a custom domain in GitHub Pages settings
-  basePath: "/ResumeWebsite",
+  // Only apply basePath on production (GitHub Pages). Remove if you add a custom domain.
+  basePath: isProd ? "/ResumeWebsite" : "",
   images: {
     unoptimized: true,
     remotePatterns: [{ hostname: "cdn.pixabay.com" }],
