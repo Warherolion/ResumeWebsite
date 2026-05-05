@@ -8,7 +8,8 @@ const nextConfig: NextConfig = {
   // Only apply basePath on production (GitHub Pages). Remove if you add a custom domain.
   basePath: isProd ? "/ResumeWebsite" : "",
   images: {
-    unoptimized: true,
+    loader: "custom",
+    loaderFile: "./imageLoader.ts",
     remotePatterns: [{ hostname: "cdn.pixabay.com" }],
   },
   turbopack: {
