@@ -454,22 +454,6 @@ export default function ProjectDeepDive() {
         </aside>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="mt-16 rounded-3xl bg-white/90 p-8 shadow-sm">
-        <h2 className="text-2xl font-semibold tracking-tight">Want the details?</h2>
-        <p className="mt-3 text-black/70">
-          If you’d like to see the full report, simulation model, or test data, feel free to reach out
-          via the contact form below.
-        </p>
-        <div className="mt-6">
-          <a
-            href="#contact"
-            className="rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80"
-          >
-            Contact me
-          </a>
-        </div>
-      </section>
     </main>
   );
 }

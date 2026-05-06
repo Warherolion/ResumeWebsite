@@ -307,22 +307,6 @@ export default function SolarRelayProject() {
         </aside>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="mt-16 rounded-3xl bg-white/90 p-8 shadow-sm">
-        <h2 className="text-2xl font-semibold tracking-tight">Want the full report?</h2>
-        <p className="mt-3 text-black/70">
-          The complete design report includes detailed link budgets, STK simulation outputs, power budgets,
-          and trade study documentation. Feel free to reach out.
-        </p>
-        <div className="mt-6">
-          <a
-            href="#contact"
-            className="rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80"
-          >
-            Contact me
-          </a>
-        </div>
-      </section>
     </main>
   );
 }
