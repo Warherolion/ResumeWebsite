@@ -5,7 +5,7 @@ import { useState } from "react";
 type Status = "idle" | "sending" | "sent" | "error";
 
 export default function Footer() {
-  const FORMSPREE_ENDPOINT = "https://formspree.io/f/xojjqeyn";
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/xnjwzqwy";
 
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string>("");
