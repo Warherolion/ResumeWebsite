@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const basePath = process.env.NODE_ENV === "production" ? "/ResumeWebsite" : "";
-
 export default function ResumePage() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-16">
@@ -12,7 +10,7 @@ export default function ResumePage() {
         <div className="flex gap-3">
           {/* Opens the raw image in a new tab */}
           <a
-            href={`${basePath}/resume.jpg`}
+            href="/resume.jpg"
             target="_blank"
             rel="noreferrer"
             className="rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80"
