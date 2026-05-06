@@ -1,3 +1,4 @@
+import Image from "@/Components/ZoomableImage";
 import Link from "next/link";
 
 const TAGS = [

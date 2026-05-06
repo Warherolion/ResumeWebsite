@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/Components/ZoomableImage";
 import Link from "next/link";
 
 const TAGS = [

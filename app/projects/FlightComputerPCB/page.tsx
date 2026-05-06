@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/Components/ZoomableImage";
 import Link from "next/link";
 
 const TAGS = [
@@ -275,26 +275,26 @@ export default function ProjectDeepDive() {
             </p>
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
               <div>
-                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl bg-black/5">
+                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl">
                   <Image
-                    src="/pcb.png"
-                    alt="PCB schematic"
+                    src="/OrionPCBSchem.png"
+                    alt="Orion PCB schematic"
                     fill
                     className="object-contain"
                   />
                 </div>
-                <p className="mt-2 text-sm text-black/50">Figure 3 — Schematic (replace with schematic screenshot)</p>
+                <p className="mt-2 text-sm text-black/50">Figure 3 — Orion flight computer schematic</p>
               </div>
               <div>
-                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl bg-black/5">
+                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl">
                   <Image
-                    src="/pcb.png"
-                    alt="PCB routing layout"
+                    src="/OrionPCBRouting.png"
+                    alt="Orion PCB routing layout"
                     fill
                     className="object-contain"
                   />
                 </div>
-                <p className="mt-2 text-sm text-black/50">Figure 4 — Routing layout (replace with routing screenshot)</p>
+                <p className="mt-2 text-sm text-black/50">Figure 4 — Orion flight computer routing layout</p>
               </div>
             </div>
           </section>
