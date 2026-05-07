@@ -69,7 +69,7 @@ export default function IntroSection() {
             </h1>
 
             <p className="mt-4 text-lg text-black/70">
-            I am a fourth-year Aerospace Engineering student at Toronto Metropolitan University with a strong interest in 
+            I am an Aerospace Engineering Graduate from Toronto Metropolitan University with a strong interest in 
             mechanical design and analysis, as well as embedded and control systems development.
             </p>
 

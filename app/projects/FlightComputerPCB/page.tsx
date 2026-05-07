@@ -58,7 +58,7 @@ export default function ProjectDeepDive() {
             {TAGS.map((t) => (
               <span
                 key={t}
-                className="rounded-full bg-black/5 px-3 py-1 text-sm text-black/70"
+                className="rounded-full px-3 py-1 text-sm text-black/70"
               >
                 {t}
               </span>
@@ -104,7 +104,7 @@ export default function ProjectDeepDive() {
 
       {/* Hero image */}
       <section className="mt-12">
-        <div className="relative h-[360px] w-full overflow-hidden rounded-3xl md:h-[460px]">
+        <div className="relative h-[360px] w-full overflow-hidden rounded-3xl md:h-[460px] bg-black/5">
           {/* Put an image at public/projects/metrocket-hero.jpg */}
           <Image
             src="/pcb.png"
@@ -216,7 +216,7 @@ export default function ProjectDeepDive() {
                   <p className="text-xs font-semibold uppercase tracking-wide text-black/50 mb-2">RTOS Task Scheduler</p>
                   <div className="grid grid-cols-5 gap-2">
                     {["Sensor Poll", "State Estimator", "Control Law", "Actuator Cmd", "Data Logger"].map((t) => (
-                      <div key={t} className="rounded-lg bg-black/5 px-2 py-2 text-xs text-center text-black/60 leading-tight">
+                      <div key={t} className="rounded-lg px-2 py-2 text-xs text-center text-black/60 leading-tight">
                         {t}
                       </div>
                     ))}
@@ -275,7 +275,7 @@ export default function ProjectDeepDive() {
             </p>
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
               <div>
-                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl">
+                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl bg-black/5">
                   <Image
                     src="/OrionPCBSchem.png"
                     alt="Orion PCB schematic"
@@ -286,7 +286,7 @@ export default function ProjectDeepDive() {
                 <p className="mt-2 text-sm text-black/50">Figure 3 — Orion flight computer schematic</p>
               </div>
               <div>
-                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl">
+                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl bg-black/5">
                   <Image
                     src="/OrionPCBRouting.png"
                     alt="Orion PCB routing layout"
@@ -396,13 +396,13 @@ export default function ProjectDeepDive() {
             </div>
           </section>
 
-          <section>
+          {/*<section>
             <h2 className="text-2xl font-semibold tracking-tight">Results</h2>
             <p className="mt-3 text-black/70">
               Add plots, key metrics, and test outcomes. Mention what improved and what didn’t.
             </p>
 
-            {/* Results images */}
+            {/* Results images 
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
               <div className="relative h-[240px] overflow-hidden rounded-3xl bg-black/5">
                 <Image
@@ -433,7 +433,7 @@ export default function ProjectDeepDive() {
               <li>What you would do differently next time</li>
               <li>Biggest risk reduction steps you took</li>
             </ul>
-          </section>
+          </section>*/}
 
         </article>
 
@@ -458,28 +458,6 @@ export default function ProjectDeepDive() {
             </ul>
           </div>
 
-          <div className="rounded-3xl bg-white/90 p-6 shadow-sm">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-black/60">
-              Photo gallery
-            </h3>
-
-            <div className="mt-4 grid grid-cols-2 gap-3">
-              {[
-                "/projects/metrocket-g1.jpg",
-                "/projects/metrocket-g2.jpg",
-                "/projects/metrocket-g3.jpg",
-                "/projects/metrocket-g4.jpg",
-              ].map((src) => (
-                <div key={src} className="relative aspect-square overflow-hidden rounded-2xl bg-black/5">
-                  <Image src={src} alt="Gallery image" fill className="object-cover" />
-                </div>
-              ))}
-            </div>
-
-            <p className="mt-3 text-xs text-black/50">
-              Replace these with test photos, CAD renders, PCB shots, and plots.
-            </p>
-          </div>
         </aside>
       </section>
 

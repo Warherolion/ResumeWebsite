@@ -18,13 +18,13 @@ export const PROJECTS: Project[] = [
     image: "/CadModel2.png",
   },
   {
-    slug: "SpaceSystemsDesign",
-    title: "Capstone: On Orbit Spacecraft Servicer",
+    slug: "capstone-attitude-control-system",
+    title: "Attitude Control System — On-Orbit Servicing Spacecraft",
     subtitle:
-      "Capstone design of an autonomous on-orbit servicing vehicle, covering rendezvous and proximity operations, GNC architecture, and subsystem trades for propulsion and robotic docking.",
+      "Design and simulation of a closed-loop 3-axis AOCS using reaction wheels and thrusters for an autonomous spacecraft performing rendezvous and docking in GEO.",
     tags: ["Space Systems", "Trades", "Mission Design"],
-    year: "2025",
-    image: "/projects/cerberus.jpg",
+    year: "2026",
+    image: "/GeoDude.png",
   },
   {
     slug: "FlightComputerPCB",
@@ -37,12 +37,12 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "Solar-Relay",
-    title: "Solar Monitoring Relay Network",
+    title: "Cerberus Constellation — Solar Monitoring & Relay",
     subtitle:
-      "Space systems design of a small-satellite relay constellation for continuous solar weather monitoring, covering orbit design, link budget, power subsystem, and mission architecture.",
-    tags: ["Space Systems", "Mission Design", "Orbital Mechanics", "Communications"],
+      "Three-satellite heliocentric constellation at Earth-Sun L4/L5 and Mars-Sun L5 for continuous solar weather monitoring and Earth–Mars communication relay. Orbit design and trajectory optimisation in Ansys STK.",
+    tags: ["Space Systems", "Mission Design", "Orbital Mechanics", "STK", "Lagrange Points"],
     year: "2025",
-    image: "/projects/solar-relay-hero.png",
+    image: "/STKPlot.png",
   },
   // Add more projects here...
 ];

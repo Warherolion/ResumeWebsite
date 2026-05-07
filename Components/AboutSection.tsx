@@ -3,25 +3,47 @@ import Link from "next/link";
 export default function AboutSection() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-20">
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-[3fr_2fr]">
         {/* Left: Heading + summary */}
         <div>
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
             About
           </h2>
-          <p className="mt-4 text-lg text-black/70">
-              My passion for space and spacecraft began in childhood, sparked by a fascination with rockets, satellites, 
-              and the idea of humanity exploring beyond Earth, and it has steadily grown into a lifelong pursuit. Over the years, 
-              that curiosity evolved into a commitment to engineering, where I have developed a hands-on, detail-oriented 
-              approach to solving complex technical problems. I enjoy tackling challenges that require both creativity with analytical 
-              thinking, and I am particularly motivated by projects that bring together mechanical design, controls, and embedded 
-              systems into a single working solution.
+          <p className="mt-4 text-base text-black/70">
+              {/*Growing up, I was the kid who took apart every broken remote, clock, and appliance I could get my hands on —
+              not always getting them back together, but always learning something in the process. That same curiosity about
+              how things work eventually pointed itself at rockets and spacecraft, and it never really let go.
               <br></br>
-              My core experience is working as the Control Systems Lead for MetRocketry which has been a defining experience 
-              in my development, allowing me to work closely with multidisciplinary teams while contributing to the design and implementation of real flight hardware. 
-              The role has strengthened my technical abilities while also teaching me leadership, collaboration, and the importance 
-              of clear communication and system-level thinking under real project constraints. Through these experiences, I continue 
-              to grow as an engineer who is driven, adaptable, and passionate about contributing to the future of aerospace and space technology.
+              Since then, that curiosity has grown into something more deliberate. I gravitate toward problems that sit at the
+              intersection of mechanical design, controls, and embedded systems — the kind where everything has to work together
+              or nothing works at all. I like the messiness of real hardware and the satisfaction of seeing a system actually
+              perform the way you designed it to.
+              <br></br>
+              Most of that has come to life through MetRocketry, where I lead the control systems development for our active
+              control rocket. It has meant long nights debugging firmware, working through system-level trade-offs with a
+              team, and learning how to communicate clearly when the stakes are real. It is the kind of work I find genuinely
+              exciting, and it is pushing me toward a career in aerospace — specifically in GNC, flight software, and
+              spacecraft systems.*/}
+
+              I have always had a deep engineering spirit, growing up I used to tinker, dissassemble and reassemble old electronics 
+              and household items, not always putting them perfectly back together but always learnging something in the process. That curiosity 
+              also expanded towards an interest in many different engineering industries like Nucular, aviation and space exploration. 
+              Space exploration having always been a peticualrly special interest as I've always adored the idea of humanity leaving the 
+              bounds of earth to reach the stars. This passion ultimatly culminated in me persuing a degree in Aerospace engineering where I learned 
+              how to transform that curiosity into practical engineering skills intially focussing on mechanical design and analysis (FEA, CFD) before
+              expanding my work into control systems focusing on system modeling, state estimation and controller design. Recently I have also
+              developed my skills in embeded systems working on PCB design, microcontroller programming (STM32 & Arduinos).
+              <br></br>
+              All these newly developed skills coalessed duing my time at MetRocketery our studetnet run high preformance rocketry team, where I was the
+              control systems lead. here I worked on the development of a canard based active control system for the purpose of steering our rocket with the canards.
+              This involved flight computer PCB design, embeded programming, Mechanical simulations, and design along with extensive modeling for both state estimation 
+              and controller design.The role has strengthened my technical abilities while also teaching me leadership, collaboration, and the 
+              importance of clear communication and system-level thinking under real project constraints. Through these experiences, 
+              I continue to grow as an engineer who is driven, adaptable, and passionate about contributing to the future of aerospace and space technology.
+          
+
+
+              
           </p>
 
 
@@ -41,53 +63,79 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Right: Skills / highlights */}
-        <div className="grid gap-4">
-          <div className="rounded-3xl bg-white/90 p-6 shadow-sm backdrop-blur">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-black/60">
-              What I work on
+        {/* Right: Skills */}
+        <div className="grid grid-cols-2 gap-4 content-start">
+          <div className="rounded-3xl bg-white/90 p-4 shadow-sm backdrop-blur">
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+              Hardware
             </h3>
-            <ul className="mt-4 space-y-2 text-black/80">
-              <li>• Control systems (PID/LQR, gain scheduling, stability)</li>
-              <li>• Embedded systems (STM32, Circut design, Programming)</li>
-              <li>• Simulation & analysis (MATLAB/Simulink, basic CFD/FEA)</li>
-              <li>• Mechanical Design (DFM/DFA, GD&T, CAD)</li>
-            </ul>
-          </div>
-
-          <div className="rounded-3xl bg-white/90 p-6 shadow-sm backdrop-blur">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-black/60">
-              Software skills
-            </h3>
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-3 flex flex-wrap gap-1.5">
               {[
-                "MATLAB/Simulink",
-                "C/C++",
-                "Solidworks",
-                "KiCad",
-                "ANSYS Fluent",
-                "Ansys Mechanical",
-                "Ansys LSDYNA",
-                "Altium",
-                "Git/GitHub",
+                "PCB Design",
+                "Soldering",
+                "FDM 3D printing",
+                "GD&T",
+                "DFM / DFA",
               ].map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full bg-black/5 px-3 py-1 text-sm text-black/80"
-                >
+                <span key={t} className="rounded-full bg-black/5 px-2.5 py-0.5 text-xs text-black/80">
                   {t}
                 </span>
               ))}
             </div>
           </div>
 
-          <div className="rounded-3xl bg-white/90 p-6 shadow-sm backdrop-blur">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-black/60">
-              Currently
+          <div className="rounded-3xl bg-white/90 p-4 shadow-sm backdrop-blur">
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+              Software
             </h3>
-            <p className="mt-4 text-black/70">
-              Developing the flight computer for the canard control bay for MetRocketry
-            </p>
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {[
+                "MATLAB",
+                "Simulink",
+                "Python",
+                "C/C++",
+                "SolidWorks",
+                "ANSYS Mechanical",
+                "ANSYS LS-DYNA",
+                "ANSYS Fluent",
+                "STK",
+              ].map((t) => (
+                <span key={t} className="rounded-full bg-black/5 px-2.5 py-0.5 text-xs text-black/80">
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="col-span-2 rounded-3xl bg-white/90 p-4 shadow-sm backdrop-blur">
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+              Areas of Interest
+            </h3>
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {[
+                "Mechanical design",
+                "Fluid Simulations (CFD)",
+                "Structural Analysis (FEA)",
+                "Active Control Systems",
+                "System modeling",
+                "Embedded Systems",
+                "Satellite Design & Orbital mechanics",
+              ].map((t) => (
+                <span key={t} className="rounded-full bg-black/5 px-2.5 py-0.5 text-xs text-black/80">
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="col-span-2 rounded-3xl bg-white/90 p-4 shadow-sm backdrop-blur">
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+              Certifications
+            </h3>
+            <ul className="mt-3 space-y-1.5 text-xs text-black/70">
+              <li>• HAM Radio Licence · Basic with Honours</li>
+              <li></li>
+            </ul>
           </div>
         </div>
       </div>
