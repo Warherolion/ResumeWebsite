@@ -9,7 +9,7 @@ export default function AboutSection() {
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
             About
           </h2>
-          <p className="mt-4 text-base text-black/70">
+          <p className="mt-4 text-base text-black/70 text-justify">
               {/*Growing up, I was the kid who took apart every broken remote, clock, and appliance I could get my hands on —
               not always getting them back together, but always learning something in the process. That same curiosity about
               how things work eventually pointed itself at rockets and spacecraft, and it never really let go.
@@ -65,11 +65,11 @@ export default function AboutSection() {
 
         {/* Right: Skills */}
         <div className="grid grid-cols-2 gap-4 content-start">
-          <div className="rounded-3xl bg-white/90 p-4 shadow-sm backdrop-blur">
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+          <div className="rounded-3xl bg-white/90 p-5 shadow-sm backdrop-blur">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-black/60">
               Hardware
             </h3>
-            <div className="mt-3 flex flex-wrap gap-1.5">
+            <div className="mt-3 flex flex-wrap gap-2">
               {[
                 "PCB Design",
                 "Soldering",
@@ -77,18 +77,18 @@ export default function AboutSection() {
                 "GD&T",
                 "DFM / DFA",
               ].map((t) => (
-                <span key={t} className="rounded-full bg-black/5 px-2.5 py-0.5 text-xs text-black/80">
+                <span key={t} className="rounded-full bg-black/5 px-3 py-1 text-sm text-black/80">
                   {t}
                 </span>
               ))}
             </div>
           </div>
 
-          <div className="rounded-3xl bg-white/90 p-4 shadow-sm backdrop-blur">
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+          <div className="rounded-3xl bg-white/90 p-5 shadow-sm backdrop-blur">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-black/60">
               Software
             </h3>
-            <div className="mt-3 flex flex-wrap gap-1.5">
+            <div className="mt-3 flex flex-wrap gap-2">
               {[
                 "MATLAB",
                 "Simulink",
@@ -100,7 +100,7 @@ export default function AboutSection() {
                 "ANSYS Fluent",
                 "STK",
               ].map((t) => (
-                <span key={t} className="rounded-full bg-black/5 px-2.5 py-0.5 text-xs text-black/80">
+                <span key={t} className="rounded-full bg-black/5 px-3 py-1 text-sm text-black/80">
                   {t}
                 </span>
               ))}
@@ -111,7 +111,7 @@ export default function AboutSection() {
             <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
               Areas of Interest
             </h3>
-            <div className="mt-3 flex flex-wrap gap-1.5">
+            <div className="mt-3 flex flex-wrap gap-2">
               {[
                 "Mechanical design",
                 "Fluid Simulations (CFD)",
@@ -121,7 +121,7 @@ export default function AboutSection() {
                 "Embedded Systems",
                 "Satellite Design & Orbital mechanics",
               ].map((t) => (
-                <span key={t} className="rounded-full bg-black/5 px-2.5 py-0.5 text-xs text-black/80">
+                <span key={t} className="rounded-full bg-black/5 px-3 py-1 text-sm text-black/80">
                   {t}
                 </span>
               ))}
@@ -132,7 +132,7 @@ export default function AboutSection() {
             <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
               Certifications
             </h3>
-            <ul className="mt-3 space-y-1.5 text-xs text-black/70">
+            <ul className="mt-3 space-y-1.5 text-sm text-black/70">
               <li>• HAM Radio Licence · Basic with Honours</li>
               <li></li>
             </ul>

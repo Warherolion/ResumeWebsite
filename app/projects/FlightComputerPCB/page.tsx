@@ -104,7 +104,7 @@ export default function ProjectDeepDive() {
 
       {/* Hero image */}
       <section className="mt-12">
-        <div className="relative h-[360px] w-full overflow-hidden rounded-3xl md:h-[460px] bg-black/5">
+        <div className="relative h-[360px] w-full overflow-hidden rounded-3xl md:h-[460px]">
           {/* Put an image at public/projects/metrocket-hero.jpg */}
           <Image
             src="/pcb.png"
@@ -275,7 +275,7 @@ export default function ProjectDeepDive() {
             </p>
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
               <div>
-                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl bg-black/5">
+                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl">
                   <Image
                     src="/OrionPCBSchem.png"
                     alt="Orion PCB schematic"
@@ -286,7 +286,7 @@ export default function ProjectDeepDive() {
                 <p className="mt-2 text-sm text-black/50">Figure 3 — Orion flight computer schematic</p>
               </div>
               <div>
-                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl bg-black/5">
+                <div className="relative h-[280px] w-full overflow-hidden rounded-3xl">
                   <Image
                     src="/OrionPCBRouting.png"
                     alt="Orion PCB routing layout"
@@ -308,9 +308,9 @@ export default function ProjectDeepDive() {
                 <span className="inline-block rounded-full bg-black/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-black/60">Version 1</span>
                 <h3 className="mt-2 text-lg font-semibold">Initial design</h3>
                 <p className="mt-2 text-sm text-black/70">
-                  The first version took aproximatly 3 weeks and contained numerous sub revisisons due to new information being learned and also input from more experienced PCB designers. This version seeked to accomplish all the goals set out above but also recognized the likley hood of a mistake or design over
-                  sight occuring. Once the PCB was manufactured and recived immediately issues were found, one of the most blatent flaws was the ESD diode packages used for the USB port was wired incorecctly, resulting in ground going to VCC and vice versa
-                  as a result the diode began to smoke and the USB lines did not work for that PCB, though power was still delivered due to the wiring method. The two other major flaws were first the external oscilator which was wired incorectly and would not be usable meaning the internal oscilator would need to be used. The third major flaw came with the SD card
+                  The first version took approximately 3 weeks and contained numerous sub revisions due to new information being learned and also input from more experienced PCB designers. This version seeked to accomplish all the goals set out above but also recognized the likely hood of a mistake or design over
+                  sight occurring. Once the PCB was manufactured and received immediately issues were found, one of the most blatant flaws was the ESD diode packages used for the USB port was wired incorrectly, resulting in ground going to VCC and vice versa
+                  as a result the diode began to smoke and the USB lines did not work for that PCB, though power was still delivered due to the wiring method. The two other major flaws were first the external oscillator which was wired incorrectly and would not be usable meaning the internal oscillator would need to be used. The third major flaw came with the SD card
                   which was also wired incorrectly. Additionally other ease of life issues also cropped up like the choice to go with micro USB rather than the more common USB-C and issues with wiring the serial wire debug pins for debug.
                 </p>
               </div>
@@ -404,7 +404,7 @@ export default function ProjectDeepDive() {
 
             {/* Results images 
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div className="relative h-[240px] overflow-hidden rounded-3xl bg-black/5">
+              <div className="relative h-[240px] overflow-hidden rounded-3xl">
                 <Image
                   src="/projects/metrocket-result1.jpg"
                   alt="Result plot or test photo 1"
@@ -412,7 +412,7 @@ export default function ProjectDeepDive() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-[240px] overflow-hidden rounded-3xl bg-black/5">
+              <div className="relative h-[240px] overflow-hidden rounded-3xl">
                 <Image
                   src="/projects/metrocket-result2.jpg"
                   alt="Result plot or test photo 2"

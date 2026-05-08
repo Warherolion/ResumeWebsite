@@ -324,7 +324,7 @@ export default function ProjectDeepDive() {
               the EKF corrects this drift using the accelerometer and magnetometer as independent references.
             </p>
             {/*
-            <div className="mt-4 relative h-[220px] w-full overflow-hidden rounded-3xl bg-black/5">
+            <div className="mt-4 relative h-[220px] w-full overflow-hidden rounded-3xl">
               <Image src="" alt="EKF attitude estimate vs. raw gyro integration — bench test" fill className="object-contain" sizes="(max-width: 768px) 100vw, 800px" />
             </div>
             
@@ -380,7 +380,7 @@ export default function ProjectDeepDive() {
               </div>
             </div>
 {/*
-            <div className="mt-6 relative h-[260px] w-full overflow-hidden rounded-3xl bg-black/5">
+            <div className="mt-6 relative h-[260px] w-full overflow-hidden rounded-3xl">
                <Image src="" alt="ACS control system response plot" fill className="object-contain" sizes="(max-width: 768px) 100vw, 800px" /> 
             </div>
             <p className="mt-2 text-sm text-black/50">Figure 11 — Simulated closed-loop ACS response showing roll rate and canard deflection.</p>*/}
@@ -403,7 +403,7 @@ export default function ProjectDeepDive() {
               for real-time monitoring and post-flight analysis.
             </p>
  {/* 
-            <div className="mt-4 relative h-[260px] w-full overflow-hidden rounded-3xl bg-black/5">
+            <div className="mt-4 relative h-[260px] w-full overflow-hidden rounded-3xl">
              <Image src="" alt="Flight software functional flow diagram" fill className="object-contain" sizes="(max-width: 768px) 100vw, 800px" /> 
             </div>
             <p className="mt-2 text-sm text-black/50">Figure 12 — Orion flight software state machine from power-on through ACS activation.</p>*/}
