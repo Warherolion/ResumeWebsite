@@ -6,7 +6,7 @@ import ProjectsSection from "@/Components/Projects";
 
 export default function Home() {
   return (
-    <main style={{ padding: "2rem" }}>
+    <main>
       <IntroSection />
       <AboutSection />
       <ProjectsSection />

@@ -42,6 +42,28 @@ export default function Navbar() {
           display: block;
         }
 
+        .nav-link {
+          position: relative;
+        }
+
+        .nav-link::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -0.4rem;
+          height: 2px;
+          border-radius: 9999px;
+          background-color: #219ebc;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.25s ease;
+        }
+
+        .nav-link:hover::after {
+          transform: scaleX(1);
+        }
+
         @media (min-width: 1024px) {
           .desktop-nav {
             display: flex;
@@ -57,12 +79,12 @@ export default function Navbar() {
         }
       `}</style>
 
-      <nav>
+      <nav className="sticky top-0 z-50 border-b border-ocean/20 bg-white/70 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-24">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/" className="text-2xl font-bold text-black">
+              <Link href="/" className="text-2xl font-bold text-ocean">
                 RANVIR SINGH
               </Link>
             </div>
@@ -74,7 +96,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-black hover:text-gray-600 text-lg font-bold transition-colors whitespace-nowrap"
+                  className="nav-link text-navy hover:text-ocean text-lg font-bold transition-colors whitespace-nowrap"
                 >
                   {link.name}
                 </Link>
@@ -84,7 +106,7 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={scrollToContact}
-                className="text-black hover:text-gray-600 text-lg font-bold transition-colors whitespace-nowrap"
+                className="nav-link text-navy hover:text-ocean text-lg font-bold transition-colors whitespace-nowrap"
               >
                 Contact
               </button>
@@ -93,7 +115,7 @@ export default function Navbar() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="mobile-menu-btn text-black hover:text-gray-600 focus:outline-none"
+              className="mobile-menu-btn text-navy hover:text-ocean focus:outline-none"
               aria-label="Toggle menu"
               aria-expanded={isOpen}
             >
@@ -118,14 +140,14 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden">
+          <div className="lg:hidden border-t border-ocean/15 bg-white/80 backdrop-blur">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-black hover:text-gray-600 block px-3 py-2 text-base font-medium"
+                  className="block rounded-lg px-3 py-2 text-base font-medium text-navy transition-colors hover:bg-ocean/10 hover:text-ocean"
                 >
                   {link.name}
                 </Link>
@@ -135,7 +157,7 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={scrollToContact}
-                className="text-black hover:text-gray-600 block w-full px-3 py-2 text-left text-base font-medium"
+                className="block w-full rounded-lg px-3 py-2 text-left text-base font-medium text-navy transition-colors hover:bg-ocean/10 hover:text-ocean"
               >
                 Contact
               </button>

@@ -2,14 +2,18 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-20">
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-[3fr_2fr]">
+    <section className="bg-white">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-20 md:grid-cols-[3fr_2fr]">
         {/* Left: Heading + summary */}
         <div>
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-ocean">
+            01 — Who I am
+          </p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">
             About
           </h2>
-          <p className="mt-4 text-base text-black/70 text-justify">
+          <div className="accent-rule mt-4 bg-ocean" />
+          <p className="mt-5 text-base text-navy/70 text-justify">
               {/*Growing up, I was the kid who took apart every broken remote, clock, and appliance I could get my hands on —
               not always getting them back together, but always learning something in the process. That same curiosity about
               how things work eventually pointed itself at rockets and spacecraft, and it never really let go.
@@ -25,21 +29,15 @@ export default function AboutSection() {
               exciting, and it is pushing me toward a career in aerospace — specifically in GNC, flight software, and
               spacecraft systems.*/}
 
-              I have always had a deep engineering spirit, growing up I used to tinker, dissassemble and reassemble old electronics 
-              and household items, not always putting them perfectly back together but always learnging something in the process. That curiosity 
-              also expanded towards an interest in many different engineering industries like Nucular, aviation and space exploration. 
-              Space exploration having always been a peticualrly special interest as I've always adored the idea of humanity leaving the 
-              bounds of earth to reach the stars. This passion ultimatly culminated in me persuing a degree in Aerospace engineering where I learned 
-              how to transform that curiosity into practical engineering skills intially focussing on mechanical design and analysis (FEA, CFD) before
-              expanding my work into control systems focusing on system modeling, state estimation and controller design. Recently I have also
-              developed my skills in embeded systems working on PCB design, microcontroller programming (STM32 & Arduinos).
-              <br></br>
-              All these newly developed skills coalessed duing my time at MetRocketery our studetnet run high preformance rocketry team, where I was the
-              control systems lead. here I worked on the development of a canard based active control system for the purpose of steering our rocket with the canards.
-              This involved flight computer PCB design, embeded programming, Mechanical simulations, and design along with extensive modeling for both state estimation 
-              and controller design.The role has strengthened my technical abilities while also teaching me leadership, collaboration, and the 
-              importance of clear communication and system-level thinking under real project constraints. Through these experiences, 
-              I continue to grow as an engineer who is driven, adaptable, and passionate about contributing to the future of aerospace and space technology.
+              I've always had an engineering instinct as a kid I took apart old electronics and household items, 
+              not always reassembling them perfectly but always learning something. That curiosity grew into a fascination
+              with nuclear, aviation, and space, the last one especially: the idea of humanity reaching beyond Earth has never stopped compelling me.
+              I pursued aerospace engineering to turn that curiosity into practical skill, starting in mechanical design and analysis (FEA, CFD) 
+              before moving into control systems system modeling, state estimation, and controller design and more recently embedded systems, 
+              including PCB design and STM32/Arduino programming. Those threads came together at MetRocketry, our student high-performance rocketry 
+              team, where I led control systems for a canard-based active steering system. The work spanned flight computer PCB design, embedded firmware, 
+              mechanical simulation, and modeling for both estimation and control and taught me as much about leadership, communication, and system-level 
+              thinking under real constraints as it did about engineering.
           
 
 
@@ -50,13 +48,13 @@ export default function AboutSection() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/projects"
-              className="rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80"
+              className="rounded-lg bg-ocean px-5 py-2 font-medium text-white shadow-lg shadow-ocean/30 transition hover:bg-navy hover:shadow-navy/30"
             >
               See Projects
             </Link>
             <Link
               href="/blog"
-              className="rounded-lg bg-white/70 px-5 py-2 transition hover:bg-white"
+              className="rounded-lg border border-ocean/40 bg-white/70 px-5 py-2 font-medium text-ocean transition hover:border-ocean hover:bg-ice/25"
             >
               Read Blog
             </Link>
@@ -65,8 +63,9 @@ export default function AboutSection() {
 
         {/* Right: Skills */}
         <div className="grid grid-cols-2 gap-4 content-start">
-          <div className="rounded-3xl bg-white/90 p-5 shadow-sm backdrop-blur">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-black/60">
+          <div className="relative overflow-hidden rounded-3xl border border-navy/10 bg-ice/15 p-5 transition hover:border-navy/20 hover:bg-ice/25">
+            <span className="absolute inset-x-0 top-0 h-1 bg-flame" />
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-navy/60">
               Hardware
             </h3>
             <div className="mt-3 flex flex-wrap gap-2">
@@ -77,15 +76,19 @@ export default function AboutSection() {
                 "GD&T",
                 "DFM / DFA",
               ].map((t) => (
-                <span key={t} className="rounded-full bg-black/5 px-3 py-1 text-sm text-black/80">
+                <span
+                  key={t}
+                  className="rounded-full bg-white px-3 py-1 text-sm text-navy/80 ring-1 ring-flame/40"
+                >
                   {t}
                 </span>
               ))}
             </div>
           </div>
 
-          <div className="rounded-3xl bg-white/90 p-5 shadow-sm backdrop-blur">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-black/60">
+          <div className="relative overflow-hidden rounded-3xl border border-navy/10 bg-ice/15 p-5 transition hover:border-navy/20 hover:bg-ice/25">
+            <span className="absolute inset-x-0 top-0 h-1 bg-ocean" />
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-navy/60">
               Software
             </h3>
             <div className="mt-3 flex flex-wrap gap-2">
@@ -100,15 +103,19 @@ export default function AboutSection() {
                 "ANSYS Fluent",
                 "STK",
               ].map((t) => (
-                <span key={t} className="rounded-full bg-black/5 px-3 py-1 text-sm text-black/80">
+                <span
+                  key={t}
+                  className="rounded-full bg-white px-3 py-1 text-sm text-navy/80 ring-1 ring-ocean/40"
+                >
                   {t}
                 </span>
               ))}
             </div>
           </div>
 
-          <div className="col-span-2 rounded-3xl bg-white/90 p-4 shadow-sm backdrop-blur">
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+          <div className="relative col-span-2 overflow-hidden rounded-3xl border border-navy/10 bg-ice/15 p-4 transition hover:border-navy/20 hover:bg-ice/25">
+            <span className="absolute inset-x-0 top-0 h-1 bg-navy" />
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-navy/60">
               Areas of Interest
             </h3>
             <div className="mt-3 flex flex-wrap gap-2">
@@ -121,20 +128,29 @@ export default function AboutSection() {
                 "Embedded Systems",
                 "Satellite Design & Orbital mechanics",
               ].map((t) => (
-                <span key={t} className="rounded-full bg-black/5 px-3 py-1 text-sm text-black/80">
+                <span
+                  key={t}
+                  className="rounded-full bg-white px-3 py-1 text-sm text-navy/80 ring-1 ring-navy/20"
+                >
                   {t}
                 </span>
               ))}
             </div>
           </div>
 
-          <div className="col-span-2 rounded-3xl bg-white/90 p-4 shadow-sm backdrop-blur">
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+          <div className="relative col-span-2 overflow-hidden rounded-3xl border border-navy/10 bg-ice/15 p-4 transition hover:border-navy/20 hover:bg-ice/25">
+            <span className="absolute inset-x-0 top-0 h-1 bg-gold" />
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-navy/60">
               Certifications
             </h3>
-            <ul className="mt-3 space-y-1.5 text-sm text-black/70">
-              <li>• HAM Radio Licence · Basic with Honours</li>
-              <li></li>
+            <ul className="mt-3 space-y-1.5 text-sm text-navy/70">
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
+                <span>
+                  HAM Radio License · Basic with Honours —{" "}
+                  <span className="font-semibold text-navy/80">VA3RZE</span>
+                </span>
+              </li>
             </ul>
           </div>
         </div>

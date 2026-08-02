@@ -42,14 +42,17 @@ export default function IntroSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="mx-auto max-w-6xl px-4 py-24">
-      {/* 12-row grid so we can offset vertically */}
-     <div className="flex flex-col md:flex-row gap-8 items-center">
+    <section ref={sectionRef} className="bg-ice/25">
+     <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 py-24 md:flex-row">
     {/* IMAGE — LEFT */}
         <div
             ref={imgRef}
-            className="relative w-full md:w-1/2 shrink-0 h-[70vh] min-h-[520px] overflow-hidden rounded-3xl will-change-transform"
+            className="relative w-full md:w-1/2 shrink-0 will-change-transform"
         >
+            {/* Soft accent glow behind the portrait */}
+            <div className="pointer-events-none absolute -inset-4 -z-10 rounded-[2.5rem] bg-ocean/40 blur-2xl" />
+
+            <div className="relative h-[70vh] min-h-[520px] overflow-hidden rounded-3xl shadow-2xl shadow-navy/25 ring-1 ring-white/60">
             <Image
             src="/Rnvir 1.jpg"
             alt="Profile picture"
@@ -57,33 +60,47 @@ export default function IntroSection() {
             className="object-cover"
             priority
             />
+            </div>
         </div>
 
         {/* TEXT — RIGHT */}
         <div
             ref={textRef}
-            className="w-full md:w-1/2 rounded-3xl bg-white/90 p-10 shadow-xl backdrop-blur will-change-transform flex flex-col justify-center"
+            className="w-full md:w-1/2 rounded-3xl bg-white p-10 shadow-xl shadow-navy/15 will-change-transform flex flex-col justify-center"
         >
-            <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
+            <span className="inline-flex w-fit items-center gap-2 rounded-full bg-navy/5 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy/70 ring-1 ring-navy/10">
+              <span className="h-2 w-2 shrink-0 rounded-full bg-flame" />
+              Open to new grad roles
+            </span>
+
+            <h1 className="mt-5 text-3xl font-bold tracking-tight md:text-4xl">
             Hi, I’m Ranvir
             </h1>
 
-            <p className="mt-4 text-lg text-black/70">
-            I am an Aerospace Engineering Graduate from Toronto Metropolitan University with a strong interest in 
+            <div className="accent-rule mt-4 bg-ocean" />
+
+            <p className="mt-5 text-lg text-navy/70">
+            I am an Aerospace Engineering Graduate from Toronto Metropolitan University with a strong interest in
             mechanical design and analysis, as well as embedded and control systems development.
             </p>
 
-            <p className="mt-4 text-black/70">
+            <p className="mt-4 text-navy/70">
             This site documents my most notable projects and my expansive skill set.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
             <Link
                 href="/resume"
-                className="rounded-lg bg-black px-5 py-2 text-white transition hover:bg-black/80"
+                className="rounded-lg bg-ocean px-5 py-2 font-medium text-white shadow-lg shadow-ocean/30 transition hover:bg-navy hover:shadow-navy/30"
             >
                 View Resume
             </Link>
+            <a
+                href="#contact"
+                className="rounded-lg border border-ocean/40 bg-white/70 px-5 py-2 font-medium text-ocean transition hover:border-ocean hover:bg-ice/25"
+            >
+                Get in touch
+            </a>
             </div>
         </div>
         </div>

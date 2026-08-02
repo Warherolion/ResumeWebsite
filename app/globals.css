@@ -1,11 +1,31 @@
 @import "tailwindcss";
 
+/* Site palette */
+@theme {
+  --color-ice: #8ecae6;
+  --color-ocean: #219ebc;
+  --color-navy: #023047;
+  --color-gold: #ffb703;
+  --color-flame: #fb8500;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-
-  color: var(--foreground);
+  /* Navy instead of pure black for body copy */
+  color: #023047;
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  /* Flat ice tint so the white cards read as panels against the page */
+  background-color: #e9f2f7;
+}
+
+/* Thin rule under section headings — colour comes from a bg-* utility,
+   so each band can identify itself with its own accent. */
+.accent-rule {
+  height: 4px;
+  width: 4.5rem;
+  border-radius: 9999px;
 }
